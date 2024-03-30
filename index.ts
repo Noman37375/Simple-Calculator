@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
-  { message: "Enter First Number", type: "number", name: "FirstNumber" },
-  { message: "Enter Second Number", type: "number", name: "SecondNumber" },
+  { message: "Enter Your First Number", type: "number", name: "FirstNumber" },
+  { message: "Enter Your Second Number", type: "number", name: "SecondNumber" },
   {
     message: "Choose The opreator you want to perform ",
     type: "list",
@@ -22,3 +22,4 @@ if (answer.Opreators === "Addition") {
 } else if (answer.Opreators === "Division") {
   console.log(answer.FirstNumber / answer.SecondNumber);
 }
+console.log("The End");
